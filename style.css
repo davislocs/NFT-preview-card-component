@@ -37,10 +37,7 @@ h1{
     font-size: 1.2rem;
     font-weight: var(--fw-heavy);
 }
-h1,
-p,  
-.divider,
-.img-bottom-layer{
+h1, p, .divider, .img-bottom-layer{
     margin-bottom: 1rem;
 }
 .align{
@@ -105,6 +102,22 @@ a:hover{
     background-color: hsl(178, 100%, 50%, 0.5);
     opacity: 1;
     transition-duration: 700ms;
+}
+@media (hover: none) {
+    .img-uper-layer:hover{
+        opacity: 0;
+    }
+    .img-uper-layer:active{
+        background-color: hsl(178, 100%, 50%, 0.5);
+        opacity: 1;
+        transition-duration: 300ms;
+    }
+    a:hover { 
+        color: var(--white);
+     }
+     a:active{
+        color: var(--Cyan);
+     }
 }
 .attribution {
      font-size: 0.6rem; text-align: center; 
